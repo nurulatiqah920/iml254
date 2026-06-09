@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Gallery: My Family</title>
+
+<style>
+.dropbtn {
+  background-color: #782470;
+  color: white;
+  padding: 0px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #782470;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 5px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+#myBtn {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}  
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+  gap: 10px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  text-align: center;
+}
+
+.column img {
+  margin-top: 20px;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<body style="margin:0;padding:0">
+<table align="center" width="100%" height="50" cellpadding="0" cellspacing="0">
+<tr align="center" bgcolor="#782470">
+<td><a href="index.html"><img src="button/logo.png" width="100" height="100"></a></td>
+<td><a href="index.html"><img src="button/home.png" width="100" height="100"></a></td> 
+<td><a href="about_me.html"><img src="button/aboutme.png" width="100" height="100"></a></td>
+<td><a href="education.html"><img src="button/education.png" width="100" height="100"></a></td>
+<td><a href="family.html"><img src="button/family.png" width="100" height="100"></a></td>
+<td>
+<div class="dropdown">
+	<img src="button/hobby.png" width="100" height="100">
+	<div class="dropdown-content" style="font-family:Comic Sans MS">
+		<a href="drawing.html">Drawing</a>
+		<a href="reading.html">Reading Novel</a>
+		<a href="writing.html">Writing Story</a>
+	</div>
+</div>
+</td>	
+<td><a href="interest.html"><img src="button/interest.png" width="100" height="100"></a></td>
+<td>
+<div class="dropdown">
+	<img src="button/gallery.png" width="100" height="100">
+	<div class="dropdown-content" style="font-family:Comic Sans MS">
+		<a href="myself.html">Myself</a>
+		<a href="myfamily.html">My Family</a>
+		<a href="mydrawing.html">My Drawing</a>
+		<a href="mynovels.html">My Novels</a>
+		<a href="myfavkpop.html">My Favourite K-pop Group</a>
+		<a href="myfavkdrama.html">My Watched K-drama</a>
+	</div>
+</div>
+</td>
+</tr>
+</table>
+<h1 align="center">MY FAMILY</h1>
+<br>
+<div class="row">
+	<div class="column">
+		<img src="gallery/myfamily/myfam1.jpg">
+		<img src="gallery/myfamily/myfam2.jpg">
+		<img src="gallery/myfamily/myfam3.jpg">
+		<img src="gallery/myfamily/myfam4.jpg">
+	</div>
+	
+	<div class="column">
+		<img src="gallery/myfamily/myfam5.jpg">
+		<img src="gallery/myfamily/myfam6.jpg">
+		<img src="gallery/myfamily/myfam7.jpg">
+		<img src="gallery/myfamily/myfam10.jpg">
+	</div>
+	
+	<div class="column">
+		<img src="gallery/myfamily/myfam8.jpg">
+		<img src="gallery/myfamily/myfam9.jpg">
+		<img src="gallery/myfamily/myfam11.jpg">
+		<img src="gallery/myfamily/myfam12.jpg">
+	</div>
+</div>
+<br>
+<br>
+<br>
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+  <img src="button/scrollup.png" width="50px" height="50px" align="right">
+</button>
+<br>
+<br>
+<table align="center" width="100%" height="50" cellpadding="0" cellspacing="0" style="color: white;">
+<tr align="center" bgcolor="#782470" >
+<td>Copyright ©2026 NURUL ATIQAH | Best viewed in Google Chrome or Microsoft Edge at
+1600x900 resolution | Last updated: 17 May 2026</td>
+</tr>
+</table>
+
+<script>
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.documentElement.scrollTop > 300) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.documentElement.scrollTop = 0;
+}
+</script>
+<body bgcolor="#eadde0">
+<body link="purple">
+</body>
+</html>
