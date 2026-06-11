@@ -23,10 +23,3 @@ button {
 	width: 100px;
 	height: 100px;
 }
-
-@media screen and (max-width: 768px) {
-  td {
-    display: block;
-    width: 100%;
-  }
-}
