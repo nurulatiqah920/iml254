@@ -24,13 +24,6 @@ button {
 	height: 100px;
 }
 
-@media screen and (max-width: 600px) {
-	td {
-		flex: 100%;
-		max-width: 100%;
-	}
-}
-
 a {
     color: purple;
 }
