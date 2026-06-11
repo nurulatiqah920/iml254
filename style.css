@@ -30,3 +30,7 @@ button {
 		max-width: 100%;
 	}
 }
+
+a {
+    color: purple;
+}
